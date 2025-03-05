@@ -1,10 +1,8 @@
+
+
 html{
     max-width: 100%;
     height: 100vh;
-    background-image: url(../imgs/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
    }
    
    body{    
@@ -26,8 +24,14 @@ html{
     display: flex;
     flex-direction: row;
     width: fit-content;
-    height: 15%;
+    width: 2%;
+    padding-left:20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
+    header a{
+        width: 100%;
+    }
 
    main{
       height: fit-content;
@@ -41,48 +45,47 @@ html{
    .fullContent{
     display: flex;
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     flex-grow: 1;
-   }
-
-   .noBorders{
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 100%;
    }
 
    .oculus{
-    width: 70%;
-    font-family: Arial, Helvetica, sans-serif;
-       font-size: 2rem;
-       color: rgb(19, 24, 78);
-       text-shadow: 0 0 3px rgb(19, 24, 78);
+    width: 10%;
+    position: fixed;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    padding-left: 20px;
    }
 
    .oculus ol {
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       list-style-type: none;
-       flex-basis: 100%;
-       width: 100%;
-       margin: 0;
-       padding: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+   }
+
+   .oculus img{
+    width: 100%;
    }
 
    .oculus ol li{
+    width: 30%;
+    padding: 0;
+    height: 15%;
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35%;
    }
 
    .oculus ol li a{
     display: flex;
-    justify-content: space-evenly;
-    text-decoration: none;
+    width: 100%;
    }
    
    :hover{
@@ -95,18 +98,17 @@ html{
 
 
    @media only screen and (max-width: 800px) {
+    header{
+        width: 7%;
+    }
+
     .oculus{
-        display: flex;
-        height: 50%;
-        justify-content: space-evenly;
+        height: 60%;
     }
-    .oculus ol{
+
+    .oculus ol li{
         width: 100%;
-        padding: 0;
-        padding-left: 10px;
-        font-size: 1rem;
-        flex-direction: column;
-        justify-content: space-evenly;
     }
+
 
    }
